@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="FRAME — a curated collection of visual stories. Every picture tells a story.">
+  <title>FRAME — The Art of Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="FRAME home">FRAME<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link is-active" href="#top">Home</a><a class="nav-link" href="#gallery">Gallery</a><a class="nav-link" href="#collections">Collections</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=88" alt="Mountain lake reflecting the last light of sunset" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content shell">
+        <p class="eyebrow reveal">CURATED VISUAL STORIES <span>—</span> EST. 2026</p>
+        <h1 id="hero-title" class="reveal">Capture the<br><em>extraordinary.</em></h1>
+        <p class="hero-copy reveal">A visual journey through moments,<br class="desktop-break"> places and emotions.</p>
+        <a class="button button-light reveal" href="#gallery">Explore the gallery <span>↘</span></a>
+      </div>
+      <div class="hero-foot shell"><span>01 / A WORLD IN FRAMES</span><span>SCROLL TO DISCOVER <b>↓</b></span></div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="shell">
+        <div class="section-heading reveal" id="collections">
+          <div><p class="eyebrow">THE COLLECTION</p><h2>Stories, <em>in stillness.</em></h2></div>
+          <p class="heading-note">A collection of fleeting moments<br>made timeless through a lens.</p>
+        </div>
+        <div class="gallery-tools reveal">
+          <div class="filters" role="group" aria-label="Filter images by category">
+            <button class="filter-button active" data-filter="all" aria-pressed="true">All <span>18</span></button>
+            <button class="filter-button" data-filter="nature" aria-pressed="false">Nature</button><button class="filter-button" data-filter="architecture" aria-pressed="false">Architecture</button><button class="filter-button" data-filter="portraits" aria-pressed="false">Portraits</button><button class="filter-button" data-filter="wildlife" aria-pressed="false">Wildlife</button><button class="filter-button" data-filter="travel" aria-pressed="false">Travel</button><button class="filter-button" data-filter="abstract" aria-pressed="false">Abstract</button>
+          </div>
+          <label class="search-wrap"><span class="sr-only">Search photographs</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="gallery-search" type="search" placeholder="Find a story..." autocomplete="off"></label>
+        </div>
+        <div class="gallery-meta"><p>SELECTED WORK <span>·</span> <span id="result-count">18 photographs</span></p><p>01 — 06 <span> / </span> 2026</p></div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-mark">⌕</span><h3>No stories found</h3><p>Try a different title or category.</p><button class="text-button" id="clear-search">Clear search <span>↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="shell about-layout">
+        <div class="about-image-wrap reveal"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1100&q=85" alt="Photographer composing a shot with a vintage camera" loading="lazy"><span class="image-caption">THE ART OF NOTICING — 001</span></div>
+        <div class="about-copy reveal"><p class="eyebrow">A LITTLE ABOUT FRAME</p><h2>Photography<br>beyond <em>the frame.</em></h2><p>FRAME is a curated collection of visual stories capturing the beauty of nature, architecture, wildlife, people and everyday life. Every image represents a unique perspective and a moment worth remembering.</p><p>We believe the best photographs do more than show us a place. They invite us to feel it.</p><a class="text-button" href="#contact">Get to know us <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="shell contact-inner reveal"><p class="eyebrow">HAVE A STORY TO TELL?</p><h2>Let’s make something<br><em>worth remembering.</em></h2><a class="contact-email" href="mailto:hello@frame.studio">hello@frame.studio <span>↗</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-main"><div class="footer-brand"><a class="wordmark" href="#top">FRAME<span>.</span></a><p>Every picture tells a story.<br>We’re here to help you see it.</p></div><div class="footer-col"><p class="eyebrow">EXPLORE</p><a href="#gallery">Gallery</a><a href="#collections">Collections</a><a href="#about">About</a></div><div class="footer-col"><p class="eyebrow">SAY HELLO</p><a href="mailto:hello@frame.studio">Email us</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest ↗</a></div><a class="back-top" href="#top">BACK TO TOP <span>↑</span></a></div><div class="shell footer-bottom"><span>© 2026 FRAME STUDIO. ALL RIGHTS RESERVED.</span><span>MADE TO BE SEEN.</span></div></footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">×</button><button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous image">←</button>
+    <div class="lightbox-content"><div class="lightbox-image-wrap"><img id="lightbox-image" src="" alt=""><span class="lightbox-loader" aria-hidden="true"></span></div><div class="lightbox-caption"><div><p class="eyebrow" id="lightbox-category"></p><h2 id="lightbox-title"></h2></div><span class="lightbox-count" id="lightbox-count"></span></div></div>
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next image">→</button>
+  </div>
+</body>
+</html>
